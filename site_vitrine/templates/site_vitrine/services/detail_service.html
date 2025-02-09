@@ -1,0 +1,49 @@
+{% extends 'site_vitrine/page_modele.html' %}
+{% block titre_body %}
+  <div class="">Explorez les services que nous offrons pour vous</div>
+{% endblock %}
+
+{% block sous_titre_body %}
+  <p class="">Nous proposons une gamme complète de services conçus pour répondre aux besoins uniques de votre entreprise. Dans le développement et à des stratégies de marketing digital ciblées, en passant par le développement de votre identité visuelle, nous sommes votre partenaire idéal pour réussir en ligne.</p>
+{% endblock %}
+
+{% block body %}
+  <div class="container-fluid animate-from-bottom" id="services">
+    <div class="container mb-5">
+      <div class="text-start mb-5">
+        <h1 class="fw-bolder mb-0"><span class="text-gradient d-inline target">Tous nos services</span></h1>
+      </div>
+    </div>
+
+    <div class="row gx-5 justify-content-center">
+      <div class="col-lg-11 col-xl-9 col-xxl-8">
+        {% for service in list_services %}
+          <!-- Project Card 1 -->
+          <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+            <div class="card-body p-0">
+              <div class="d-flex align-items-center">
+                <div class="p-5">
+                  <h2 class="fw-bolder">{{ service.libelle }}</h2>
+                  <p>{{ service.description }}</p>
+                </div>
+                <img class="img-fluid img-projet me-2 rounded-3 border" src="{{ service.image.url }}" style="height: 300px;" alt="..." />
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+    </div>
+
+    <div class="container mb-5">
+        <!-- [ 💡 Pourquoi Choisir Educ-Technology ? ] -->
+        <div class="fw-bolder">💡 Pourquoi Choisir Educ-Technology ?</div>
+        <div class="small" style="padding-left: 20px;">
+            <div>🔹 Technologies modernes : Nous utilisons les frameworks et CMS les plus récents (Django, Laravel, WordPress, React, etc.).</div>
+            <div>🔹 Sites responsives : Nos développements s’adaptent parfaitement aux écrans mobiles, tablettes et ordinateurs.</div>
+            <div>🔹 Sécurité et fiabilité : Nous mettons un point d’honneur à sécuriser vos données et votre site web.</div>
+            <div>🔹 Support et accompagnement : Nous vous assistons après la mise en ligne pour assurer la réussite de votre projet.</div>
+        </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--  
+	Solution by GetTemplates.co
+	URL: https://gettemplates.co
+  -->
+<html lang="fr">
+  <head>
+    {% load static %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- awesone fonts css -->
+    <link href="{% static 'fontawesome-free-6.2.1-web/css/all.css' %}" rel="stylesheet" type="text/css" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"> -->
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="{% static 'site_vitrine/owl-carousel/assets/owl.carousel.min.css' %}" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'site_vitrine/css/bootstrap.min.css' %}" />
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="{% static 'site_vitrine/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'site_vitrine/xmodal/style_modal.css' %}" />
+    <script src="{% static 'site_vitrine/xmodal/xmodal1.0.0.js' %}"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'site_vitrine/js/jquery-3.3.1.slim.min.js' %}"></script>
+    <script src="{% static 'site_vitrine/js/popper.min.js' %}"></script>
+    <script src="{% static 'site_vitrine/js/bootstrap.min.js' %}"></script>
+
+    <title>Solution Educ-Technology</title>
+    <style>
+      .justifier {
+        text-align: justify;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent" id="gtco-main-nav">
+      <div class="container">
+        <a href="/" class="navbar-brand">EDUC-TECH</a>
+        <button class="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"><span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span></button>
+        <div id="my-nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Domicile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#about">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#services">Projet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#news">Nouvelles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          {% if utilisateur.connecte %}
+                <a href="/console/">
+                    <div class="d-flex align-items-center my-2 my-lg-0">
+                        
+                            <img src="{{utilisateur.conf_user.photo_profil.url}}" style="border-radius: 50%;height: 50px;width: 50px;border: 3px solid white;" alt="" srcset="">
+                            <div class="p-2  text-white ">
+                                <div class="fw-bold text-uppercase">{{utilisateur.user.last_name}}</div>
+                                <div class="small text-white">{{utilisateur.client.type_clien}}</div>
+                            </div>
+                            
+                        
+                    </div>
+                </a>
+            {% else %}
+                <form class="form-inline my-2 my-lg-0">
+                    <a href="/connexion/" class="btn btn-outline-dark my-2 my-sm-0 mr-3 text-uppercase">Connexion</a>
+                    <a href="/nouveau-compte/" class="btn btn-info my-2 my-sm-0 text-uppercase">Compte</a>
+                </form>
+            {% endif %}
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid gtco-banner-area animate-from-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="h1 fw-bolder mb-4">
+              {% block titre_body %}
+
+              {% endblock %}
+            </div>
+            <div class="">
+              {% block sous_titre_body %}
+
+              {% endblock %}
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="{% static 'site_vitrine/images/banner-img.png' %}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid animate-from-bottom">
+      <!-- Projects Section -->
+      <section class="">
+        <div class="">
+          {% block body %}
+
+          {% endblock %}
+        </div>
+      </section>
+    </div>
+
+    <!-- | Footer | -->
+    <footer class="container-fluid">
+      <div class="container">
+        <input class="ps-2 checkbox_abonnement" checked type="checkbox" name="new" id="abonner" /><span>Abonnez-vous à notre newsletter pour être informé(e) de nos nouveautés.</span>
+        <div class="row" id="gtco-footer">
+          <div class="col-lg-6" id="contact">
+            <h4>Contactez-nous</h4>
+            <input type="text" class="form-control" placeholder="Nom complet" id="nom_complet" />
+            <input type="email" class="form-control" placeholder="Addresse courriel" id="email" />
+            <select class="form-control select-message" name="" id="messages_rapide">
+              <option value="">Sélectionner un message Rapide</option>
+              <option value="Je souhaite créer un site web moderne et professionnel pour mon entreprise. Pouvez-vous m'aider à concrétiser ce projet ?">
+                Je souhaite créer un site web moderne et professionnel <br />pour mon entreprise. Pouvez-vous m'aider à concrétiser ce projet ?
+              </option>
+              <option value="Je cherche une solution pour améliorer ma visibilité en ligne et attirer plus de clients. Quels services proposez-vous ?">Je cherche une solution pour améliorer ma visibilité en ligne et attirer plus de clients. Quels services proposez-vous ?</option>
+              <option value="Je suis prêt à lancer mon projet digital dès aujourd'hui ! Comment pouvons-nous commencer ?">Je suis prêt à lancer mon projet digital dès aujourd'hui ! Comment pouvons-nous commencer ?</option>
+              <option value="Je souhaite un design unique et professionnel pour [mon logo / mes supports publicitaires / mon identité visuelle]. Pouvez-vous m'aider à transformer mes idées en réalité ?">Je souhaite un design unique et professionnel pour [mon logo / mes supports publicitaires / mon identité visuelle]. Pouvez-vous m'aider à transformer mes idées en réalité ?</option>
+            </select>
+            <textarea class="form-control message_personnalise" placeholder="Message personnalisé "></textarea>
+            <button class="bg-defaul btn rounded text-white" id="btn_send_message">Envoyer <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-6">
+                <h4>Compagnie</h4>
+                <ul class="nav flex-column company-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">Domicile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/#abouts">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Environ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nouvelles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ's</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                <h4 class="mt-5">Envolez-nous</h4>
+                <div class="text-start small">
+                    <div class="social-buttons">
+                    <!-- Bouton WhatsApp -->
+                    <a href="https://wa.me/243851212843" class="btn btn-success btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <!-- Bouton Facebook -->
+                    <a href="https://facebook.com" class="btn btn-primary btn-lg" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <!-- Bouton pour appeler -->
+                    <a class="btn btn-secondary btn-lg" onclick="alert('Appelez-nous au : +243 851 212 843')">
+                        <i class="fas fa-phone text-white"></i> <span class="text-white">Téléphone</span>
+                    </a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <h4>Services</h4>
+                <ul class="nav flex-column services-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Web Design</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Graphics Design</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">App Design</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SEO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Marketing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Analytic</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <p>&copy; 2019. Tous droits réservés Educ-Technology</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="zone_modal"></div>
+    <!-- owl carousel js -->
+    <script src="{% static 'site_vitrine/owl-carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'site_vitrine/js/getCookieDjango.js' %}"></script>
+    <script src="{% static 'site_vitrine/js/main.js' %}"></script>
+  </body>
+</html>

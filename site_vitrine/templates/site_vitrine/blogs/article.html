@@ -1,0 +1,170 @@
+{% extends "site_vitrine/page_modele.html" %}
+{% block titre_body %}
+    {{article.titre}}
+{% endblock titre_body %}
+
+{% block sous_titre_body %}
+    <p class="">{{article.sous_titre}}</p>
+{% endblock sous_titre_body %}
+
+{% block body %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="blog-card">
+                <img class="rounded w-100" src="{{article.image.url}}" alt="Image de l'article" class="blog-image">
+                <div class="blog-content rounded border">
+                    <p class="text-muted">Par <strong>{{article.utilisateur.username}}</strong> | Publié le <strong>{{article.date_publication}}</strong></p>
+                    <p class="blog-description">{{article.description|safe}}</p>
+                </div>
+                <div class="blog-footer mt-2 mb-5 target">
+                    <div class="row gx-0">
+
+                        <div class="col">
+                            <span class="pe-2">Tous les ({{nbr_commentaires}}) commentaires </span><span class="ms-2 btn" id="btn_plus_commentaires"> <i class="fas fa-angle-left" style="transform: rotate(180deg);padding-left: 5px;"></i></span>
+                        </div>
+
+                        <div class="col text-end">
+                            <button class="btn btn-primary"><i class="fa-solid fa-thumbs-up icon-btn" id="like"></i> <span class="nbr_like">{{article.nbr_jaime_x}}</span></button>
+                            <button class="btn btn-danger"><i class="fa-solid fa-thumbs-down icon-btn" id="dislike"></i> <span class="nbr_disilike">{{article.nbr_jaime_y}}</span></button>
+                        </div>
+                        
+                    </div>
+
+                    <div class="zone_commentaires mt-2" style="display: none;">
+
+                        {% for commentaire in commentaires %}
+                            <div class="d-flex mt-2" style="border-left: 1px solid black;padding-left: 4px;background-color: rgba(228, 227, 227, 0.318);">
+                                <img src="{{article.image.url}}" alt="" srcset="" style="width: 50px;height: 50px;border-radius: 50%;">
+                                <div class="" style="padding-left: 5px;">
+
+                                    <div class="user_commenter fw-bold"><b>{{commentaire.utilisateur.username}}</b></div>
+                                    <div class="user_commenter small mb-2">{{commentaire.date}}</div>
+
+                                    <div class="">{{commentaire.text}}</div>
+                                </div>
+                            </div>
+                        {% endfor %}
+
+                        
+                    </div>
+
+                    <textarea class="form-control mt-2" name="commentaire" id="commentaire" placeholder="Votre commentaire..."></textarea>
+                    <div class="text-end mt-2">
+                        <button class="btn btn-primary text-uppercase" id="btn_commenter">Commenter</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="" style="display: none;">
+    <div class="id_article">{{id_article}}</div>
+</div>
+<div class="zone_modal"></div>
+<script>
+
+    $(document).ready(function() {
+        $("#like").click(function() {
+            let datas_request = {
+                "action": "ajoute_reaction",
+                "datas": {
+                    "reaction": "like",
+                    "id_article" : $('.id_article').text()
+                }
+            }
+            let myHeaders = new Headers({ 'X-CSRFToken': Csrf_token });
+            let myInit = {
+                method: 'POST',
+                headers: myHeaders,
+                mode: 'cors',
+                cache: 'default',
+                body: JSON.stringify(datas_request)
+            }
+            fetch('/article/', myInit).then((res) => {
+
+                return res.json()
+            }).then((res) => {
+                if (res.code == 0) {
+                    $('.nbr_like').text(res.nbr_jaime_x)
+                }
+            })
+        });
+        $("#dislike").click(function() {
+            let datas_request = {
+                "action": "ajoute_reaction",
+                "datas": {
+                    "reaction": "dislike",
+                    "id_article" : $('.id_article').text()
+                }
+            }
+            let myHeaders = new Headers({ 'X-CSRFToken': Csrf_token });
+            let myInit = {
+                method: 'POST',
+                headers: myHeaders,
+                mode: 'cors',
+                cache: 'default',
+                body: JSON.stringify(datas_request)
+            }
+            fetch('/article/', myInit).then((res) => {
+
+                return res.json()
+            }).then((res) => {
+                if (res.code == 0) {
+                    $('.nbr_disilike').text(res.nbr_jaime_y)
+                }
+            })
+        });
+
+        $("#btn_commenter").click(function() {
+            let commentaire_text = $('#commentaire').val();
+            if(commentaire_text != ""){
+
+                _Xmodal.loader('.zone_modal', "Envoi de la commentaire...");
+                let datas_request = {
+                    "action": "enregistrement_commentaire",
+                    "datas": {
+                        "commentaire": commentaire_text,
+                        "id_article" : $('.id_article').text()
+                    }
+                }
+                let myHeaders = new Headers({ 'X-CSRFToken': Csrf_token });
+                let myInit = {
+                    method: 'POST',
+                    headers: myHeaders,
+                    mode: 'cors',
+                    cache: 'default',
+                    body: JSON.stringify(datas_request)
+                }
+                fetch('/article/', myInit).then((res) => {
+
+                    return res.json()
+                }).then((res) => {
+
+                    _Xmodal.loader_close();
+                    if (res.code == 0) {
+                        _Xmodal.checked('.zone_modal');
+                    }
+                })
+
+            }else{
+                _Xmodal.xalert('.zone_modal', "Message d'alerte", `Veuillez remplir le champs votre commentaire avant d'envoyer`);
+            }
+        })
+
+        $("#btn_plus_commentaires").click(function() {
+            $(this).toggleClass("ouvert");
+
+            if ($(this).hasClass("ouvert")) {
+                $(this).css("transform","rotate(90deg)")
+                $('.zone_commentaires').show();
+            } else {
+                $(this).css("transform","rotate(3deg)")
+                $('.zone_commentaires').hide();
+            }
+        })
+    });
+</script>
+{% endblock body %}

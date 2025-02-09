@@ -1,0 +1,483 @@
+<!doctype html>
+<!--
+	Solution by GetTemplates.co
+	URL: https://gettemplates.co
+-->
+<html lang="fr">
+<head>
+    {% load static %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- awesone fonts css-->
+    <link href="{% static 'fontawesome-free-6.2.1-web/css/all.css' %}" rel="stylesheet" type="text/css">
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">-->
+    <!-- owl carousel css-->
+    <link rel="stylesheet" href="{% static 'site_vitrine/owl-carousel/assets/owl.carousel.min.css' %}" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'site_vitrine/css/bootstrap.min.css' %}">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="{% static 'site_vitrine/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'site_vitrine/xmodal/style_modal.css' %}">
+    <script src="{% static 'site_vitrine/xmodal/xmodal1.0.0.js' %}"></script>
+
+    <title>Solution Educ-Technology</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent" id="gtco-main-nav">
+    <div class="container"><a class="navbar-brand">EDUC-TECH</a>
+        <button class="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"><span
+                class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span></button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Domicile</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="/projets/">Projet</a></li>
+                <li class="nav-item"><a class="nav-link" href="#news">Nouvelles</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+
+            {% if utilisateur.connecte %}
+                <a href="/console/">
+                    <div class="d-flex align-items-center my-2 my-lg-0">
+                        
+                            <img src="{{utilisateur.conf_user.photo_profil.url}}" style="border-radius: 50%;height: 50px;width: 50px;border: 3px solid white;" alt="" srcset="">
+                            <div class="p-2  text-white ">
+                                <div class="fw-bold text-uppercase">{{utilisateur.user.last_name}}</div>
+                                <div class="small text-white">{{utilisateur.client.type_clien}}</div>
+                            </div>
+                            
+                        
+                    </div>
+                </a>
+            {% else %}
+                <form class="form-inline my-2 my-lg-0">
+                    <a href="/connexion/" class="btn btn-outline-dark my-2 my-sm-0 mr-3 text-uppercase">Connexion</a>
+                    <a href="/nouveau-compte/" class="btn btn-info my-2 my-sm-0 text-uppercase">Compte</a>
+                </form>
+            {% endif %}
+            
+        </div>
+    </div>
+</nav>
+<div class="container-fluid gtco-banner-area animate-from-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Nous nous engageons à apporter La meilleure <span>solution</span> pour votre entreprise. </h1>
+                <p> Educ-technology : est une entreprise dynamique et innovante, spécialisée dans le développement informatique, le marketing digital, et la conception graphique. Notre mission est d'accompagner les entreprises et organisations dans leur transformation.</p>
+                
+                <div class="text-start small">
+                    <div class="social-buttons">
+                    <!-- Bouton WhatsApp -->
+                    <span href="https://wa.me/243851212843" class="btn btn-success btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </span>
+                    <!-- Bouton Facebook -->
+                    <span href="https://facebook.com" class="btn btn-primary btn-lg" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </span>
+                    <!-- Bouton pour appeler -->
+                    <button class="btn btn-secondary btn-lg" onclick="alert('Appelez-nous au : +243 851 212 843')">
+                        <i class="fas fa-phone"></i> Téléphone
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card"><img class="card-img-top img-fluid" src="{% static 'site_vitrine/images/banner-img.png' %}" alt=""></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid gtco-feature animate-from-bottom " id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="cover">
+                    <div class="card">
+                        <svg
+                                class="back-bg"
+                                width="100%" viewBox="0 0 900 700" style="position:absolute; z-index: -1">
+                            <defs>
+                                <linearGradient id="PSgrad_01" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
+                                    <stop offset="0%" stop-color="rgb(1,230,248)" stop-opacity="1"/>
+                                    <stop offset="100%" stop-color="rgb(29,62,222)" stop-opacity="1"/>
+                                </linearGradient>
+                            </defs>
+                            <path fill-rule="evenodd" opacity="0.102" fill="url(#PSgrad_01)"
+                                  d="M616.656,2.494 L89.351,98.948 C19.867,111.658 -16.508,176.639 7.408,240.130 L122.755,546.348 C141.761,596.806 203.597,623.407 259.843,609.597 L697.535,502.126 C748.221,489.680 783.967,441.432 777.751,392.742 L739.837,95.775 C732.096,35.145 677.715,-8.675 616.656,2.494 Z"/>
+                        </svg>
+                        <!-- *************-->
+
+                        <svg width="100%" viewBox="0 0 700 500">
+                            <clipPath id="clip-path">
+                                <path d="M89.479,0.180 L512.635,25.932 C568.395,29.326 603.115,76.927 590.357,129.078 L528.827,380.603 C518.688,422.048 472.661,448.814 427.190,443.300 L73.350,400.391 C32.374,395.422 -0.267,360.907 -0.002,322.064 L1.609,85.154 C1.938,36.786 40.481,-2.801 89.479,0.180 Z"></path>
+                            </clipPath>
+                            <!-- xlink:href for modern browsers, src for IE8- -->
+                            <image clip-path="url(#clip-path)" xlink:href="{% static 'site_vitrine/images/learn-img.jpg' %}" width="100%"
+                                   height="465" class="svg__image"></image>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h2> Nous sommes un Digital créatif Experts en agence et en marketing</h2>
+                <p> 
+                    Notre équipe est composée de professionnels qualifiés et passionnés, réunissant une expertise diversifiée dans les domaines du web,mobile,desktop et du marketing. Avec des développeurs web talentueux, des spécialistes en référencement (SEO), des experts en stratégie publicitaire et des designers créatifs, nous travaillons en synergie pour offrir des solutions personnalisées et efficaces.
+                <p>
+                    <small>
+                    </small>
+                </p>
+                <a href="#">Pour en savoir plus <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid gtco-features animate-from-bottom spacer" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2> Explorez les services
+                    que nous offrons pour vous</h2>
+                <p> Nous proposons une gamme complète de services conçus pour répondre aux besoins uniques de votre entreprise. De la création de sites web modernes et performants à des stratégies de marketing digital ciblées, en passant par le développement de votre identité visuelle, nous sommes votre partenaire idéal pour réussir en ligne.</p>
+                <a href="/services/">Tous les services<i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+            <div class="col-lg-8 target">
+                <svg id="bg-services"
+                     width="100%"
+                     viewBox="0 0 1000 800">
+                    <defs>
+                        <linearGradient id="PSgrad_02" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
+                            <stop offset="0%" stop-color="rgb(1,230,248)" stop-opacity="1"/>
+                            <stop offset="100%" stop-color="rgb(29,62,222)" stop-opacity="1"/>
+                        </linearGradient>
+                    </defs>
+                    <path fill-rule="evenodd" opacity="0.102" fill="url(#PSgrad_02)"
+                          d="M801.878,3.146 L116.381,128.537 C26.052,145.060 -21.235,229.535 9.856,312.073 L159.806,710.157 C184.515,775.753 264.901,810.334 338.020,792.380 L907.021,652.668 C972.912,636.489 1019.383,573.766 1011.301,510.470 L962.013,124.412 C951.950,45.594 881.254,-11.373 801.878,3.146 Z"/>
+                </svg>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="{% static 'site_vitrine/images/web-design.png' %}" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Conception de sites Web</h3>
+                                <p class="card-text">Création de sites modernes, performants et adaptés à tous les écrans pour mettre en valeur votre entreprise.</p>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="{% static 'site_vitrine/images/marketing.png' %}" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Marketing digital</h3>
+                                <p class="card-text">Stratégies sur mesure pour améliorer votre visibilité en ligne et attirer davantage de clients.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="{% static 'site_vitrine/images/seo.png' %}" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Développement mobile</h3>
+                                <p class="card-text">Applications mobiles intuitives et personnalisées pour engager vos utilisateurs sur toutes les plateformes.</p>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="{% static 'site_vitrine/images/graphics-design.png' %}" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Conception graphique</h3>
+                                <p class="card-text">Identités visuelles uniques, logos, et designs captivants pour sublimer votre image de marque.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid gtco-numbers-block animate-from-bottom spacer">
+    <div class="container">
+        <svg width="100%" viewBox="0 0 1600 400">
+            <defs>
+                <linearGradient id="PSgrad_03" x1="80.279%" x2="0%"  y2="0%">
+                    <stop offset="0%" stop-color="rgb(1,230,248)" stop-opacity="1" />
+                    <stop offset="100%" stop-color="rgb(29,62,222)" stop-opacity="1" />
+
+                </linearGradient>
+
+            </defs>
+            <!-- <clipPath id="clip-path3">
+
+                                      </clipPath> -->
+
+            <path fill-rule="evenodd"  fill="url(#PSgrad_03)"
+                  d="M98.891,386.002 L1527.942,380.805 C1581.806,380.610 1599.093,335.367 1570.005,284.353 L1480.254,126.948 C1458.704,89.153 1408.314,59.820 1366.025,57.550 L298.504,0.261 C238.784,-2.944 166.619,25.419 138.312,70.265 L16.944,262.546 C-24.214,327.750 12.103,386.317 98.891,386.002 Z"></path>
+
+            <clipPath id="ctm" fill="none">
+                <path
+                        d="M98.891,386.002 L1527.942,380.805 C1581.806,380.610 1599.093,335.367 1570.005,284.353 L1480.254,126.948 C1458.704,89.153 1408.314,59.820 1366.025,57.550 L298.504,0.261 C238.784,-2.944 166.619,25.419 138.312,70.265 L16.944,262.546 C-24.214,327.750 12.103,386.317 98.891,386.002 Z"></path>
+            </clipPath>
+
+            <!-- xlink:href for modern browsers, src for IE8- -->
+            <image  clip-path="url(#ctm)" xlink:href="{% static 'site_vitrine/images/word-map.png' %}" height="800px" width="100%" class="svg__image">
+
+            </image>
+
+        </svg>
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">125</h5>
+                        <p class="card-text">Projets actifs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">200</h5>
+                        <p class="card-text">Croissance de l’entreprise</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">530</h5>
+                        <p class="card-text">Projets terminés</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">941</h5>
+                        <p class="card-text">Des clients satisfaits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid gtco-testimonials animate-from-bottom">
+    <div class="container">
+        <h2>Notre équipe est pleinement engagée à vous servir.</h2>
+        <div class="owl-carousel owl-carousel1 owl-theme">
+            {% for conf_user in Configuration_utilissssateur %}
+            <div>
+                <div class="card text-center"><img class="card-img-top" src="{{conf_user.photo_profil.url}}" alt="">
+                    <div class="card-body">
+                        <h5>{{conf_user.utilisateur.first_name}} {{conf_user.utilisateur.last_name}}<br/>
+                            <span> {{conf_user.fonction.libelle}} </span></h5>
+                        <p class="card-text">“ {{conf_user.fonction.description}} ” </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+</div>
+<div class="container-fluid gtco-features-list animate-from-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="{% static 'site_vitrine/images/quality-results.png' %}" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Des résultats de qualité</h5>
+                    Nous nous engageons à fournir des solutions fiables et performantes pour garantir votre satisfaction.
+                </div>
+            </div>
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="{% static 'site_vitrine/images/analytics.png' %}" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Analytics</h5>
+                    Des outils avancés pour suivre et analyser vos performances afin d’optimiser vos stratégies.
+                </div>
+            </div>
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="{% static 'site_vitrine/images/affordable-pricing.png' %}" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Prix abordable</h5>
+                    Des services de qualité à des tarifs compétitifs, adaptés à votre budget.
+                </div>
+            </div>
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="{% static 'site_vitrine/images/easy-to-use.png' %}" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Facile à utiliser</h5>
+                    Des solutions intuitives et accessibles pour simplifier votre quotidien.
+                </div>
+            </div>
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="{% static 'site_vitrine/images/free-support.png' %}" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Assistance gratuite</h5>
+                    Une équipe dédiée disponible pour vous accompagner sans frais supplémentaires.
+                </div>
+            </div>
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="{% static 'site_vitrine/images/effectively-increase.png' %}" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Augmenter efficacement</h5>
+                    Des stratégies éprouvées pour booster votre croissance et maximiser vos résultats.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid gtco-logo-area animate-from-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col"><img src="{% static 'site_vitrine/images/logo1.png' %}" class="img-fluid" alt=""></div>
+            <div class="col"><img src="{% static 'site_vitrine/images/logo2.png' %}" class="img-fluid" alt=""></div>
+            <div class="col"><img src="{% static 'site_vitrine/images/logo3.png' %}" class="img-fluid" alt=""></div>
+            <div class="col"><img src="{% static 'site_vitrine/images/logo4.png' %}" class="img-fluid" alt=""></div>
+            <div class="col"><img src="{% static 'site_vitrine/images/logo5.png' %}" class="img-fluid" alt=""></div>
+        </div>
+    </div>
+</div>
+
+<!--|Dernières nouvelles et articles|-->
+<div class="container-fluid gtco-news" id="news">
+    <div class="container">
+        <h2>Dernières nouvelles et articles</h2>
+        <div class="owl-carousel owl-carousel2 ">
+
+            {% for article in Blogs %}
+                <div>
+                    <div class="card text-center"><img class="card-img-top" src="{{article.image.url}}" alt="">
+                        <div class="card-body text-left pr-0 pl-0">
+                            <h5> {{article.titre}}</h5>
+                            <p class="card-text">{{article.sous_titre}}</p>
+                            <a href="/article?article={{article.id}}">Lire plus <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-defaul p-2 rounded d-flex-inlign message-bottom box-shadow text-white small" style="display: none;"></div>
+
+<div class="bg-white p-2 rounded d-flex-inlign modale-btn-user box-shadow text-white small" style="display: none;">
+    <div class="col text-end xclose">
+        <div class="d-flex justify-content-center text-end">
+        <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center" style="width: 23px; height: 23px;">
+          <span><i class="fas fa-times close-icon"></i></span>
+        </div>
+    </div>
+    </div>
+    
+    <div class="text-center"><img class="modale-btn-user-img-top" src="{% static 'site_vitrine/images/customer2.jpg' %}" alt="">
+        <div class="">
+            
+            <h5 class="text-dark">Benjamin Badika<br/>
+                <span class="small"> Responsable Manager </span></h5>
+            <p class="modal-user-text">Je suis actuellement connecté pour répondre à tous vos besoins. Merci de nous donner l'opportunité de construire quelque chose ensemble</p>
+            <div class="text-start">
+                <div class="social-buttons">
+                    <!-- Bouton WhatsApp -->
+                    <a href="https://wa.me/243851212843" class="btn btn-success btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <!-- Bouton Facebook -->
+                    <span href="https://www.facebook.com/profile.php?id=61571962821801" class="btn btn-primary btn-lg" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </span>
+                    <button class="btn btn-secondary btn-lg" onclick="alert('Appelez-nous au : +243 851 212 843')">
+                        <i class="fas fa-phone"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--| Footer |-->
+<footer class="container-fluid">
+    <div class="container" >
+        <input class="ps-2 checkbox_abonnement"  checked type="checkbox" name="new" id="abonner"><span>Abonnez-vous à notre newsletter pour être informé(e) de nos nouveautés.</span>
+        <div class="row" id="gtco-footer">
+            <div class="col-lg-6" id="contact">
+                <h4> Contactez-nous </h4>
+                <input type="text" class="form-control" placeholder="Nom complet" id="nom_complet">
+                <input type="email" class="form-control" placeholder="Addresse courriel" id="email">
+                <select class="form-control select-message" name="" id="messages_rapide">
+                    <option value="">Sélectionner un message Rapide</option>
+                    <option value="Je souhaite créer un site web moderne et professionnel pour mon entreprise. Pouvez-vous m'aider à concrétiser ce projet ?">Je souhaite créer un site web moderne et professionnel <br>pour mon entreprise. Pouvez-vous m'aider à concrétiser ce projet ?</option>
+                    <option value="Je cherche une solution pour améliorer ma visibilité en ligne et attirer plus de clients. Quels services proposez-vous ?">Je cherche une solution pour améliorer ma visibilité en ligne et attirer plus de clients. Quels services proposez-vous ?</option>
+                    <option value="Je suis prêt à lancer mon projet digital dès aujourd'hui ! Comment pouvons-nous commencer ?">Je suis prêt à lancer mon projet digital dès aujourd'hui ! Comment pouvons-nous commencer ?</option>
+                    <option value="Je souhaite un design unique et professionnel pour [mon logo / mes supports publicitaires / mon identité visuelle]. Pouvez-vous m'aider à transformer mes idées en réalité ?">Je souhaite un design unique et professionnel pour [mon logo / mes supports publicitaires / mon identité visuelle]. Pouvez-vous m'aider à transformer mes idées en réalité ?</option>
+
+                </select>
+                <textarea  class="form-control message_personnalise" placeholder="Message personnalisé "></textarea>
+                <button class="bg-defaul btn rounded text-white" id="btn_send_message">Envoyer <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-6">
+                        <h4>Compagnie</h4>
+                        <ul class="nav flex-column company-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Domicile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Environ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Nouvelles</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">FAQ's</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        </ul>
+                        <h4 class="mt-5">Envolez-nous</h4>
+                        <div class="text-start small">
+                            <div class="social-buttons">
+                            <!-- Bouton WhatsApp -->
+                            <a href="https://wa.me/243851212843" class="btn btn-success btn-lg" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <!-- Bouton Facebook -->
+                            <a href="https://facebook.com" class="btn btn-primary btn-lg" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a >
+                            <!-- Bouton pour appeler -->
+                            <a class="btn btn-secondary btn-lg" onclick="alert('Appelez-nous au : +243 851 212 843')">
+                                <i class="fas fa-phone text-white"></i> <span class="text-white">Téléphone</span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h4>Services</h4>
+                        <ul class="nav flex-column services-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Web Design</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Graphics Design</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">App Design</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">SEO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Marketing</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Analytic</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <p>&copy; 2019. Tous droits réservés Educ-Technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="zone_modal"></div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{% static 'site_vitrine/js/jquery-3.3.1.slim.min.js' %}"></script>
+<script src="{% static 'site_vitrine/js/popper.min.js' %}"></script>
+<script src="{% static 'site_vitrine/js/bootstrap.min.js' %}"></script>
+<!-- owl carousel js-->
+<script src="{% static 'site_vitrine/owl-carousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'site_vitrine/js/getCookieDjango.js' %}"></script>
+<script src="{% static 'site_vitrine/js/main.js' %}"></script>
+</body>
+</html>

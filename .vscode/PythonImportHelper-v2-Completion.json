@@ -1,0 +1,1103 @@
+[
+    {
+        "label": "http.client",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "http.client",
+        "description": "http.client",
+        "detail": "http.client",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "smtplib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "smtplib",
+        "description": "smtplib",
+        "detail": "smtplib",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEMultipart",
+        "importPath": "email.mime.multipart",
+        "description": "email.mime.multipart",
+        "isExtraImport": true,
+        "detail": "email.mime.multipart",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEText",
+        "importPath": "email.mime.text",
+        "description": "email.mime.text",
+        "isExtraImport": true,
+        "detail": "email.mime.text",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEBase",
+        "importPath": "email.mime.base",
+        "description": "email.mime.base",
+        "isExtraImport": true,
+        "detail": "email.mime.base",
+        "documentation": {}
+    },
+    {
+        "label": "encoders",
+        "importPath": "email",
+        "description": "email",
+        "isExtraImport": true,
+        "detail": "email",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponseRedirect",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "site_vitrine.models",
+        "description": "site_vitrine.models",
+        "isExtraImport": true,
+        "detail": "site_vitrine.models",
+        "documentation": {}
+    },
+    {
+        "label": "SenderMail",
+        "importPath": "ngangadev_sms.sendmail",
+        "description": "ngangadev_sms.sendmail",
+        "isExtraImport": true,
+        "detail": "ngangadev_sms.sendmail",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Orange_sms",
+        "kind": 6,
+        "importPath": "ngangadev_sms.orange_sms",
+        "description": "ngangadev_sms.orange_sms",
+        "peekOfCode": "class Orange_sms:\n    def __init__(self,Authorization,):\n        self.is_token = False\n        self.message_is_send = False\n        self.info_token = {}\n        self.Authorization = Authorization\n        self.conn_access_token = http.client.HTTPSConnection(\"api.orange.com\")\n        self.payload_access_token = 'grant_type=client_credentials'\n        self.headers_access_token = {\n        'Content-Type': 'application/x-www-form-urlencoded',",
+        "detail": "ngangadev_sms.orange_sms",
+        "documentation": {}
+    },
+    {
+        "label": "SenderMail",
+        "kind": 6,
+        "importPath": "ngangadev_sms.sendmail",
+        "description": "ngangadev_sms.sendmail",
+        "peekOfCode": "class SenderMail:\n    def __init__(self, smtp_server: str,smtp_port: int,smtp_server_password: str,image_path:str,smtp_server_mail: str):\n        self.smtp_server = smtp_server\n        self.smtp_port = smtp_port\n        self.smtp_server_password = smtp_server_password\n        self.smtp_server_mail = smtp_server_mail\n        self.image_path = image_path\n    def sendMail(self,destinataire,emetaire,sujet,html_content):\n        # Création de l'e-mail\n        message = MIMEMultipart(\"related\")",
+        "detail": "ngangadev_sms.sendmail",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "site_eductechnology.asgi",
+        "description": "site_eductechnology.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "site_eductechnology.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-rka4@^ymh080c2gih86($h&n9u+)!lsyswcysr2*xf89qw%a8!'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-rka4@^ymh080c2gih86($h&n9u+)!lsyswcysr2*xf89qw%a8!'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'site_vitrine.apps.SiteVitrineConfig',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'site_vitrine.apps.SiteVitrineConfig',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'site_vitrine.apps.SiteVitrineConfig',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'site_vitrine.apps.SiteVitrineConfig',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]\nMIDDLEWARE = [",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'site_eductechnology.urls'",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "ROOT_URLCONF = 'site_eductechnology.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'site_eductechnology.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'fr-fr'\nTIME_ZONE = 'Europe/Paris'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR.joinpath('media/')",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "TIME_ZONE = 'Europe/Paris'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR.joinpath('media/')\n# Default primary key field type",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR.joinpath('media/')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR.joinpath('media/')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR.joinpath('media/')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR.joinpath('media/')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR.joinpath('media/')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "MEDIA_ROOT = BASE_DIR.joinpath('media/')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "site_eductechnology.settings",
+        "description": "site_eductechnology.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "site_eductechnology.settings",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.site_header",
+        "kind": 5,
+        "importPath": "site_eductechnology.urls",
+        "description": "site_eductechnology.urls",
+        "peekOfCode": "admin.site.site_header = \"EDUC TECHNOLOGY\"\nadmin.site.site_title = \"EDUC TECHNOLOGY\"\nadmin.site.index_header = \"EDUC TECHNOLOGY\"\nurlpatterns = [\n    path('',include(\"site_vitrine.urls\")),\n    path('admin/', admin.site.urls),\n]\nif settings.DEBUG:\n    urlpatterns += static(\n    settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "site_eductechnology.urls",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.site_title",
+        "kind": 5,
+        "importPath": "site_eductechnology.urls",
+        "description": "site_eductechnology.urls",
+        "peekOfCode": "admin.site.site_title = \"EDUC TECHNOLOGY\"\nadmin.site.index_header = \"EDUC TECHNOLOGY\"\nurlpatterns = [\n    path('',include(\"site_vitrine.urls\")),\n    path('admin/', admin.site.urls),\n]\nif settings.DEBUG:\n    urlpatterns += static(\n    settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "site_eductechnology.urls",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.index_header",
+        "kind": 5,
+        "importPath": "site_eductechnology.urls",
+        "description": "site_eductechnology.urls",
+        "peekOfCode": "admin.site.index_header = \"EDUC TECHNOLOGY\"\nurlpatterns = [\n    path('',include(\"site_vitrine.urls\")),\n    path('admin/', admin.site.urls),\n]\nif settings.DEBUG:\n    urlpatterns += static(\n    settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "site_eductechnology.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "site_eductechnology.urls",
+        "description": "site_eductechnology.urls",
+        "peekOfCode": "urlpatterns = [\n    path('',include(\"site_vitrine.urls\")),\n    path('admin/', admin.site.urls),\n]\nif settings.DEBUG:\n    urlpatterns += static(\n    settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "site_eductechnology.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "site_eductechnology.wsgi",
+        "description": "site_eductechnology.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "site_eductechnology.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "site_vitrine.migrations.0001_initial",
+        "description": "site_vitrine.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Blog',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "site_vitrine.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "site_vitrine.migrations.0002_fonctions_configuration_utilissssateur",
+        "description": "site_vitrine.migrations.0002_fonctions_configuration_utilissssateur",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('site_vitrine', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Fonctions',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('libelle', models.CharField(max_length=100, verbose_name='Libellé')),",
+        "detail": "site_vitrine.migrations.0002_fonctions_configuration_utilissssateur",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "site_vitrine.migrations.0003_configuration_utilissssateur_utilisateur",
+        "description": "site_vitrine.migrations.0003_configuration_utilissssateur_utilisateur",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('site_vitrine', '0002_fonctions_configuration_utilissssateur'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='configuration_utilissssateur',\n            name='utilisateur',\n            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL, verbose_name='Utilisateur'),",
+        "detail": "site_vitrine.migrations.0003_configuration_utilissssateur_utilisateur",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "site_vitrine.migrations.0004_configuration_utilissssateur_photo_profil",
+        "description": "site_vitrine.migrations.0004_configuration_utilissssateur_photo_profil",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('site_vitrine', '0003_configuration_utilissssateur_utilisateur'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='configuration_utilissssateur',\n            name='photo_profil',\n            field=models.ImageField(null=True, upload_to='', verbose_name='Photo profil'),\n        ),",
+        "detail": "site_vitrine.migrations.0004_configuration_utilissssateur_photo_profil",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "site_vitrine.migrations.0005_configuration_utilissssateur_is_equipe_educ",
+        "description": "site_vitrine.migrations.0005_configuration_utilissssateur_is_equipe_educ",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('site_vitrine', '0004_configuration_utilissssateur_photo_profil'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='configuration_utilissssateur',\n            name='is_equipe_educ',\n            field=models.IntegerField(choices=[(1, 'OUi'), (0, 'Non')], null=True, verbose_name=\"L'utilisateur fait partir de l'équipe d'Educ-technology\"),\n        ),",
+        "detail": "site_vitrine.migrations.0005_configuration_utilissssateur_is_equipe_educ",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "site_vitrine.migrations.0006_blog_utilisateur_alter_blog_nombre_vues_and_more",
+        "description": "site_vitrine.migrations.0006_blog_utilisateur_alter_blog_nombre_vues_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('site_vitrine', '0005_configuration_utilissssateur_is_equipe_educ'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='blog',\n            name='utilisateur',\n            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL, verbose_name='Auteur'),",
+        "detail": "site_vitrine.migrations.0006_blog_utilisateur_alter_blog_nombre_vues_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "site_vitrine.migrations.0007_clients_nom_clien_alter_clients_logo_and_more",
+        "description": "site_vitrine.migrations.0007_clients_nom_clien_alter_clients_logo_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('site_vitrine', '0006_blog_utilisateur_alter_blog_nombre_vues_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='clients',\n            name='nom_clien',\n            field=models.CharField(max_length=100, null=True, verbose_name='Nom client'),\n        ),",
+        "detail": "site_vitrine.migrations.0007_clients_nom_clien_alter_clients_logo_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "site_vitrine.migrations.0008_projets_image_alter_projets_budget_and_more",
+        "description": "site_vitrine.migrations.0008_projets_image_alter_projets_budget_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('site_vitrine', '0007_clients_nom_clien_alter_clients_logo_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='projets',\n            name='image',\n            field=models.ImageField(null=True, upload_to='', verbose_name='Image ou logo du projet'),\n        ),",
+        "detail": "site_vitrine.migrations.0008_projets_image_alter_projets_budget_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "site_vitrine.migrations.0009_alter_blog_description",
+        "description": "site_vitrine.migrations.0009_alter_blog_description",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('site_vitrine', '0008_projets_image_alter_projets_budget_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='blog',\n            name='description',\n            field=models.TextField(max_length=100, verbose_name=\"Description de l'article\"),\n        ),",
+        "detail": "site_vitrine.migrations.0009_alter_blog_description",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "site_vitrine.migrations.0010_alter_blog_description_commentaire_blogs",
+        "description": "site_vitrine.migrations.0010_alter_blog_description_commentaire_blogs",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('site_vitrine', '0009_alter_blog_description'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='blog',\n            name='description',\n            field=models.TextField(max_length=10000, verbose_name=\"Description de l'article\"),",
+        "detail": "site_vitrine.migrations.0010_alter_blog_description_commentaire_blogs",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "site_vitrine.migrations.0011_services_image_alter_commentaire_blogs_utilisateur",
+        "description": "site_vitrine.migrations.0011_services_image_alter_commentaire_blogs_utilisateur",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('site_vitrine', '0010_alter_blog_description_commentaire_blogs'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='services',\n            name='image',\n            field=models.ImageField(null=True, upload_to=''),",
+        "detail": "site_vitrine.migrations.0011_services_image_alter_commentaire_blogs_utilisateur",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "site_vitrine.migrations.0012_alter_services_description",
+        "description": "site_vitrine.migrations.0012_alter_services_description",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('site_vitrine', '0011_services_image_alter_commentaire_blogs_utilisateur'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='services',\n            name='description',\n            field=models.TextField(max_length=15000, verbose_name='Description'),\n        ),",
+        "detail": "site_vitrine.migrations.0012_alter_services_description",
+        "documentation": {}
+    },
+    {
+        "label": "SiteVitrineConfig",
+        "kind": 6,
+        "importPath": "site_vitrine.apps",
+        "description": "site_vitrine.apps",
+        "peekOfCode": "class SiteVitrineConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'site_vitrine'",
+        "detail": "site_vitrine.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Fonctions",
+        "kind": 6,
+        "importPath": "site_vitrine.models",
+        "description": "site_vitrine.models",
+        "peekOfCode": "class Fonctions(models.Model):\n    libelle = models.CharField(max_length=100,verbose_name=\"Libellé\")\n    code = models.CharField(max_length=100,verbose_name=\"Code\")\n    description = models.CharField(max_length=100,verbose_name=\"Description\")\n    date_inscrit = models.DateField()\n    def __str__(self):\n        return '%s' % (self.libelle)\nclass Configuration_utilissssateur(models.Model):\n    si_il_fait_partir_de_lequipe_educ = [\n        (1,\"OUi\"),",
+        "detail": "site_vitrine.models",
+        "documentation": {}
+    },
+    {
+        "label": "Configuration_utilissssateur",
+        "kind": 6,
+        "importPath": "site_vitrine.models",
+        "description": "site_vitrine.models",
+        "peekOfCode": "class Configuration_utilissssateur(models.Model):\n    si_il_fait_partir_de_lequipe_educ = [\n        (1,\"OUi\"),\n        (0,\"Non\"),\n    ]\n    photo_profil = models.ImageField(null=True,verbose_name=\"Photo profil\")\n    utilisateur = models.ForeignKey(User, on_delete=models.CASCADE,null=True,verbose_name=\"Utilisateur\")\n    profession = models.CharField(max_length=100,verbose_name=\"Profession\")\n    fonction = models.ForeignKey(Fonctions, on_delete=models.CASCADE,null=True,verbose_name=\"Fonction\")\n    is_equipe_educ = models.IntegerField(null=True,choices=si_il_fait_partir_de_lequipe_educ,verbose_name=\"L'utilisateur fait partir de l'équipe d'Educ-technology\")",
+        "detail": "site_vitrine.models",
+        "documentation": {}
+    },
+    {
+        "label": "Site",
+        "kind": 6,
+        "importPath": "site_vitrine.models",
+        "description": "site_vitrine.models",
+        "peekOfCode": "class Site(models.Model):\n    nom = models.CharField(max_length=100,verbose_name=\"Nom du site\")\n    titre = models.CharField(max_length=100,verbose_name=\"Titre du site\")\n    sloga = models.CharField(max_length=100,verbose_name=\"Sloga du site\")\n    description = models.CharField(max_length=100,verbose_name=\"Description du site\")\n    logo = models.ImageField(null=True,verbose_name=\"Logo\")\nclass Blog(models.Model):\n    image = models.ImageField(null=False,verbose_name=\"Image de l'article\")\n    titre = models.CharField(max_length=100,verbose_name=\"Titre du site\")\n    sous_titre = models.CharField(max_length=100,verbose_name=\"Sous Titre du site\")",
+        "detail": "site_vitrine.models",
+        "documentation": {}
+    },
+    {
+        "label": "Blog",
+        "kind": 6,
+        "importPath": "site_vitrine.models",
+        "description": "site_vitrine.models",
+        "peekOfCode": "class Blog(models.Model):\n    image = models.ImageField(null=False,verbose_name=\"Image de l'article\")\n    titre = models.CharField(max_length=100,verbose_name=\"Titre du site\")\n    sous_titre = models.CharField(max_length=100,verbose_name=\"Sous Titre du site\")\n    description = models.TextField(max_length=10000,verbose_name=\"Description de l'article\")\n    nombre_vues = models.IntegerField(null=True,verbose_name=\"Nombre vue\")\n    date_publication = models.DateField(verbose_name=\"Date du publication de l'article\")\n    categorie = models.CharField(max_length=100,verbose_name=\"Catégorie de l'article\")\n    nbr_jaime_x = models.IntegerField(null=True,verbose_name=\"Notre de j'aime pour cette article\")\n    nbr_jaime_y = models.IntegerField(null=True,verbose_name=\"Nombre de ce qui n'ont pas aimé\")",
+        "detail": "site_vitrine.models",
+        "documentation": {}
+    },
+    {
+        "label": "Commentaire_blogs",
+        "kind": 6,
+        "importPath": "site_vitrine.models",
+        "description": "site_vitrine.models",
+        "peekOfCode": "class Commentaire_blogs(models.Model):\n    article = models.ForeignKey(Blog, on_delete=models.CASCADE,null=True,verbose_name=\"Article\")\n    date = models.DateField(verbose_name=\"Date du commentaire\")\n    text = models.TextField(max_length=10000,verbose_name=\"commentaire\")\n    utilisateur = models.ForeignKey(User, on_delete=models.CASCADE,null=True,verbose_name=\"Utilisateur\")\n    def __str__(self):\n        return '%s | %s | %s ' % (self.article,self.date,self.utilisateur)\nclass Galerie(models.Model):\n    list_type_fichiers = [\n        ('0',\"Image\"),",
+        "detail": "site_vitrine.models",
+        "documentation": {}
+    },
+    {
+        "label": "Galerie",
+        "kind": 6,
+        "importPath": "site_vitrine.models",
+        "description": "site_vitrine.models",
+        "peekOfCode": "class Galerie(models.Model):\n    list_type_fichiers = [\n        ('0',\"Image\"),\n        ('1',\"Document\"),\n        ('2',\"Video\"),\n        ('3',\"Audio\")\n    ]\n    titre = models.CharField(max_length=100,verbose_name=\"Titre\")\n    description_courte = models.CharField(max_length=100,verbose_name=\"Description Courte\")\n    description = models.CharField(max_length=100,verbose_name=\"Description logn\")",
+        "detail": "site_vitrine.models",
+        "documentation": {}
+    },
+    {
+        "label": "Clients",
+        "kind": 6,
+        "importPath": "site_vitrine.models",
+        "description": "site_vitrine.models",
+        "peekOfCode": "class Clients(models.Model):\n    list_type_client = [\n        ('Particulier',\"Particulier\"),\n        ('Société',\"Société\"),\n        ('Organisation',\"Organisation\"),\n    ]\n    nom_clien = models.CharField(max_length=100,verbose_name=\"Nom client\",null=True)\n    logo = models.ImageField(null=True,verbose_name=\"Logo société ou particulier\")\n    utilisateur = models.ForeignKey(User, on_delete=models.CASCADE,null=True,verbose_name=\"Utilisateur\")\n    type_clien = models.CharField(max_length=100,verbose_name=\"Type du fichier\",choices=list_type_client)",
+        "detail": "site_vitrine.models",
+        "documentation": {}
+    },
+    {
+        "label": "Services",
+        "kind": 6,
+        "importPath": "site_vitrine.models",
+        "description": "site_vitrine.models",
+        "peekOfCode": "class Services(models.Model):\n    icon = models.CharField(max_length=100,verbose_name=\"Icone\",help_text=\"Icone fontawson au format htmp exemple : <i class='fas fa-users'></i>\")\n    image = models.ImageField(null=True)\n    libelle = models.CharField(max_length=100,verbose_name=\"Libelle Service\")\n    titre = models.CharField(max_length=100,verbose_name=\"Titre du Service\")\n    description = models.TextField(max_length=15000,verbose_name=\"Description\")\n    date_ajouter = models.DateField()\n    def __str__(self):\n        return '%s' % (self.libelle)\nclass Produits(models.Model):",
+        "detail": "site_vitrine.models",
+        "documentation": {}
+    },
+    {
+        "label": "Produits",
+        "kind": 6,
+        "importPath": "site_vitrine.models",
+        "description": "site_vitrine.models",
+        "peekOfCode": "class Produits(models.Model):\n    icon = models.CharField(max_length=100,verbose_name=\"Icone\",help_text=\"Icone fontawson au format htmp exemple : <i class='fas fa-users'></i>\")\n    libelle = models.CharField(max_length=100,verbose_name=\"Libelle Produit\")\n    titre = models.CharField(max_length=100,verbose_name=\"Titre du Produit\")\n    description = models.CharField(max_length=100,verbose_name=\"Description\")\n    lien_site_web = models.CharField(max_length=100,verbose_name=\"Description\")\n    date_ajouter = models.DateField()\nclass Projets(models.Model):\n    image = models.ImageField(null=True,verbose_name=\"Image ou logo du projet\")\n    reference= models.CharField(max_length=100,verbose_name=\"Référence du projet\")",
+        "detail": "site_vitrine.models",
+        "documentation": {}
+    },
+    {
+        "label": "Projets",
+        "kind": 6,
+        "importPath": "site_vitrine.models",
+        "description": "site_vitrine.models",
+        "peekOfCode": "class Projets(models.Model):\n    image = models.ImageField(null=True,verbose_name=\"Image ou logo du projet\")\n    reference= models.CharField(max_length=100,verbose_name=\"Référence du projet\")\n    service = models.ForeignKey(Services, on_delete=models.CASCADE,null=True,verbose_name=\"Service\")\n    client = models.ForeignKey(Clients, on_delete=models.CASCADE,null=True,verbose_name=\"Cliet\")\n    libelle = models.CharField(max_length=100,verbose_name=\"Libellé du projet\")\n    Budget = models.IntegerField(help_text=\"En dollar ($)\")\n    date_du_debut = models.DateField()\n    date_du_fin = models.DateField()\n    description = models.CharField(max_length=100,verbose_name=\"Description du projet\")",
+        "detail": "site_vitrine.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "site_vitrine.urls",
+        "description": "site_vitrine.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.home, name='home'),\n    path('message-manager/', views.gestion_messages, name='gestion_messages'),\n    path('projets/', views.projets, name='projets'),\n    path('article/', views.blogs_article_detail, name='blogs_article_detail'),\n    path('services/', views.services, name='services'),\n    path('nouveau-compte/', views.sinscrire, name='sinscrire'),\n    path('reinitialisation-motdepasse/', views.reinitialisation_motdepasse, name='reinitialisation_motdepasse'),\n    path('connexion/', views.connexion, name='connexion'),\n    path('console/', views.console, name='console'),",
+        "detail": "site_vitrine.urls",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "site_vitrine.views",
+        "description": "site_vitrine.views",
+        "peekOfCode": "def home(request):\n    #Récupération des utilisateur de l'équipe educ\n    _Configuration_utilissssateur = Configuration_utilissssateur.objects.filter(is_equipe_educ=1)\n    #Récupération des articles du blogs\n    _Blog = Blog.objects.all()\n    #Récupération compte utilisateur \n    utilisateur = {\n        \"connecte\" : False\n    }\n    if request.user:",
+        "detail": "site_vitrine.views",
+        "documentation": {}
+    },
+    {
+        "label": "projets",
+        "kind": 2,
+        "importPath": "site_vitrine.views",
+        "description": "site_vitrine.views",
+        "peekOfCode": "def projets(request):\n    _Projets = Projets.objects.all()\n    utilisateur = {\n        \"connecte\" : False\n    }\n    if request.user:\n        try :\n            _Conf_user = Configuration_utilissssateur.objects.get(utilisateur=request.user)\n            utilisateur[\"user\"] = request.user\n            utilisateur[\"conf_user\"] = _Conf_user",
+        "detail": "site_vitrine.views",
+        "documentation": {}
+    },
+    {
+        "label": "gestion_messages",
+        "kind": 2,
+        "importPath": "site_vitrine.views",
+        "description": "site_vitrine.views",
+        "peekOfCode": "def gestion_messages(request):\n    try:\n        if request.method == \"POST\":\n            response = {\"code\": 1}\n            try:\n                datas_request = json.loads(request.body)\n                if ( datas_request[\"action\"] == \"envoi_message_visiteur_vers_eductechnology\"):\n                    _SenderMail = SenderMail(\n                        smtp_server = \"smtp.gmail.com\",\n                        smtp_port = 587,",
+        "detail": "site_vitrine.views",
+        "documentation": {}
+    },
+    {
+        "label": "blogs_article_detail",
+        "kind": 2,
+        "importPath": "site_vitrine.views",
+        "description": "site_vitrine.views",
+        "peekOfCode": "def blogs_article_detail(request):\n    if request.user:\n        try :\n            _Conf_user = Configuration_utilissssateur.objects.get(utilisateur=request.user)\n            utilisateur[\"user\"] = request.user\n            utilisateur[\"conf_user\"] = _Conf_user\n            utilisateur[\"connecte\"] = True\n        except:\n            pass\n        try :",
+        "detail": "site_vitrine.views",
+        "documentation": {}
+    },
+    {
+        "label": "services",
+        "kind": 2,
+        "importPath": "site_vitrine.views",
+        "description": "site_vitrine.views",
+        "peekOfCode": "def services(request):\n    _Services = Services.objects.all()\n    #Récupération compte utilisateur \n    utilisateur = {\n        \"connecte\" : False\n    }\n    if request.user:\n        try :\n            _Conf_user = Configuration_utilissssateur.objects.get(utilisateur=request.user)\n            utilisateur[\"user\"] = request.user",
+        "detail": "site_vitrine.views",
+        "documentation": {}
+    },
+    {
+        "label": "sinscrire",
+        "kind": 2,
+        "importPath": "site_vitrine.views",
+        "description": "site_vitrine.views",
+        "peekOfCode": "def sinscrire(request):\n    try:\n        if request.method == \"POST\":\n            response = {\"code\": 1}\n            datas_request = json.loads(request.body)\n            if ( datas_request[\"action\"] == \"creation_compte\"):\n                user = User.objects.filter(email=datas_request[\"datas\"]['email'])\n                if len(user) == 0:\n                    print('--------- 2')\n                    user = User.objects.create(",
+        "detail": "site_vitrine.views",
+        "documentation": {}
+    },
+    {
+        "label": "reinitialisation_motdepasse",
+        "kind": 2,
+        "importPath": "site_vitrine.views",
+        "description": "site_vitrine.views",
+        "peekOfCode": "def reinitialisation_motdepasse(request):\n    return render(request,\"site_vitrine/comptes/forgot-password.html\",{})\ndef connexion(request):\n    try:\n        if request.method == \"POST\":\n            response = {\"code\": 1}\n            try:\n                datas_request = json.loads(request.body)\n                print(datas_request)\n                if ( datas_request[\"action\"] == \"connecte_user\"):",
+        "detail": "site_vitrine.views",
+        "documentation": {}
+    },
+    {
+        "label": "connexion",
+        "kind": 2,
+        "importPath": "site_vitrine.views",
+        "description": "site_vitrine.views",
+        "peekOfCode": "def connexion(request):\n    try:\n        if request.method == \"POST\":\n            response = {\"code\": 1}\n            try:\n                datas_request = json.loads(request.body)\n                print(datas_request)\n                if ( datas_request[\"action\"] == \"connecte_user\"):\n                    _user = authenticate(username=datas_request[\"datas\"][\"email\"],password=datas_request[\"datas\"][\"password1\"],)\n                    _users = User.objects.get(username=datas_request[\"datas\"][\"email\"])",
+        "detail": "site_vitrine.views",
+        "documentation": {}
+    },
+    {
+        "label": "console",
+        "kind": 2,
+        "importPath": "site_vitrine.views",
+        "description": "site_vitrine.views",
+        "peekOfCode": "def console(request):\n    if not request.user.is_authenticated:\n        print(\"utilisateur ne pas connecter\")\n        return HttpResponseRedirect(\"/\")\n    else:\n        #Récupération compte utilisateur \n        utilisateur = {\n            \"connecte\" : False\n        }\n        if request.user:",
+        "detail": "site_vitrine.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'site_eductechnology.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

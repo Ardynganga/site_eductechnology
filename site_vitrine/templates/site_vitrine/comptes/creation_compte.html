@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Register</title>
+
+     <!-- awesone fonts css -->
+     <link href="{% static 'fontawesome-free-6.2.1-web/css/all.css' %}" rel="stylesheet" type="text/css" />
+     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"> -->
+     <!-- owl carousel css -->
+     <link rel="stylesheet" href="{% static 'site_vitrine/owl-carousel/assets/owl.carousel.min.css' %}" type="text/css" />
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="{% static 'site_vitrine/css/bootstrap.min.css' %}" />
+     <!-- custom CSS -->
+     <link rel="stylesheet" href="{% static 'site_vitrine/css/style.css' %}" />
+     <link rel="stylesheet" href="{% static 'site_vitrine/xmodal/style_modal.css' %}" />
+
+     <link rel="stylesheet" href="{% static 'site_vitrine/css/sb-admin-2.css' %}" />
+
+     <script src="{% static 'site_vitrine/xmodal/xmodal1.0.0.js' %}"></script>
+ 
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="{% static 'site_vitrine/js/jquery-3.3.1.slim.min.js' %}"></script>
+     <script src="{% static 'site_vitrine/js/popper.min.js' %}"></script>
+     <script src="{% static 'site_vitrine/js/bootstrap.min.js' %}"></script>
+     <script src="{% static 'site_vitrine/js/getCookieDjango.js' %}"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+    <div class="container">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-block bg-register-image text-center">
+                        <img src="{% static 'site_vitrine/images/educ-technology (3).png'%}" alt="" srcset="">
+                       
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Créer votre compte !</h1>
+                            </div>
+                            <form class="user">
+                                <div class="form-group row">
+                                    
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                            placeholder="Nom ou Raison social">
+                                    </div>
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <select class="w-100 form-control-user form-control-select" id="exampleInputStatut" name="statut" >
+                                            <option value="Statut">Statut</option>
+                                            <option value="Particulier">Particulier</option>
+                                            <option value="Société">Société</option>
+                                            <option value="Organisation">Organisation</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-user mt-2" id="exampleInputEmail" placeholder="Email Address">
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleInputPassword" placeholder="Password">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleRepeatPassword" placeholder="Repeat Password">
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-user btn-block" id="btn_new_compte">
+                                    Register Account
+                                </a>
+                                <hr>
+                                <a href="#" class="btn btn-google btn-user btn-block api_connection" >
+                                    <i class="fab fa-google fa-fw"></i> Register with Google
+                                </a>
+                                <a href="#" class="btn btn-facebook btn-user btn-block api_connection" >
+                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                                </a>
+                            </form>
+                            <hr>
+                            <div class="text-center">
+                                <a class="small" href="/reinitialisation-motdepasse/">Mot de passe oublié ?</a>
+                            </div>
+                            <div class="text-center">
+                                <a class="small" href="/connexion/">Vous avez déjà un compte ? Connectez-vous!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+<div class="zone_modal"></div>
+<script>
+    const Csrf_token = getCookie("csrftoken");
+    let _Xmodal = new Xmodal();
+   
+    $('.api_connection').each(function (indexInArray, valueOfElement) {
+        $(this).click(function (e) { 
+            e.preventDefault();
+            _Xmodal.xalert('.zone_modal',"Service indisponible","Cette méthode d'inscription est momentanément inaccessible. Veuillez continuer en renseignant vos informations.");
+        }); 
+        
+    });
+
+    $('#btn_new_compte').click(function (e) { 
+        e.preventDefault();
+        
+        let nom_ou_raison_social = $('#exampleLastName').val();
+        let email = $('#exampleInputEmail').val();
+        let statut = $('#exampleInputStatut').val();
+        let password1 = $('#exampleInputPassword').val();
+        let password2 = $('#exampleRepeatPassword').val();
+
+        if(nom_ou_raison_social != "" && email != "" && statut != "" && password1 != "" && password2 != ""){
+
+            if(password1 == password2){
+                _Xmodal.loader('.zone_modal',"Création compte...");
+                let datas_request = {
+                    "action": "creation_compte",
+                    "datas": {
+                        "nom_ou_raison_social": nom_ou_raison_social,
+                        "email" : email,
+                        "statut" : statut,
+                        "password1" : password1
+                    }
+                }
+                let myHeaders = new Headers({ 'X-CSRFToken': Csrf_token });
+                let myInit = {
+                    method: 'POST',
+                    headers: myHeaders,
+                    mode: 'cors',
+                    cache: 'default',
+                    body: JSON.stringify(datas_request)
+                }
+                fetch('/nouveau-compte/', myInit).then((res) => {
+
+                    return res.json()
+                }).then((res) => {
+
+                    _Xmodal.loader_close();
+                    if (res.code == 0) {
+                        _Xmodal.checked('.zone_modal');
+                        window.location.replace('/connexion/');
+                    }else if( res.code == 2){
+                        _Xmodal.xalert('.zone_modal',"Adresse e-mail déjà utilisée","veuillez en choisir une autre.")
+                    }
+                })
+            }else{
+                _Xmodal.xalert('.zone_modal',"Mot de passe incorrect","Les deux mots de passe sont différents. Veuillez les saisir à nouveau.")
+            }
+        }else{
+            _Xmodal.xalert('.zone_modal',"Valeurs manquantes","tous les champs sont requis. Veuillez compléter les valeurs manquantes.");
+        }
+    });
+</script>
+</html>
